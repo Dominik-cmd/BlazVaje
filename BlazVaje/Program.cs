@@ -9,8 +9,10 @@ namespace BlazVaje
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello: Blaz Orsos"); // Console.WriteLine("Hello: ");        V naloge mi pijse ka moren v separate line printate Hello pa Ime Priimek,
-            Console.Read();                         // Console.WriteLine("Blaz Orsos");     samo ci tak dan, te mi v dvej vrsticaj to napijse. Expected output je pa,
-        }                                               //                                      v enoj vrstice. 
+            int x = 12;
+            int y = 9;
+            Console.WriteLine(x + y);
+            Console.Read();
+        }
     }
 }
