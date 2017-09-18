@@ -9,9 +9,8 @@ namespace BlazVaje
     {
         static void Main(string[] args)
         {
-            int x = 12;
-            int y = 9;
-            Console.WriteLine(x + y);
+            double x = 5, y = 8;
+            Console.WriteLine(x / y);
             Console.Read();
         }
     }
