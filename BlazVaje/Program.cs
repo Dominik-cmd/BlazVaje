@@ -9,13 +9,17 @@ namespace BlazVaje
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter the number: ");
-            int num = Convert.ToInt32(Console.ReadLine());
+            List<string> myStrings = new List<string>(new string[] {"First", "Second", "Third", "Fourth"});
+            List<int> myInts = new List<int>();
+    
 
-            for (int i = 0; i <= 10; i++)
+            for (int i = 0; i <= 3; i++)
             {
-                Console.WriteLine("{0} * {1} = {2}", num, i, num * i);
+                Console.Write("Enter the {0} number: ", myStrings[i]);
+                myInts.Add(Convert.ToInt32(Console.ReadLine()));
             }
+
+            Console.Write(myInts.Average());
             Console.Read();
         }
     }
