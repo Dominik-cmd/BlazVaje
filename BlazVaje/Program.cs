@@ -9,10 +9,12 @@ namespace BlazVaje
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(-1 + 4 * 6);
-            Console.WriteLine((35 + 5) % 7);
-            Console.WriteLine(14 + 4 - 4 * 6 / 11);
-            Console.WriteLine(2 + 15 / 6 * 1 - 7 % 2);
+            int x = 5;
+            int y = 6;
+            int z = x;
+            x = y;
+            y = z;
+            Console.WriteLine("X {0}, Y {1}", x, y);
             Console.Read();
         }
     }
