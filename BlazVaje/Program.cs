@@ -9,18 +9,13 @@ namespace BlazVaje
     {
         static void Main(string[] args)
         {
-            int x;
-            Console.WriteLine("Enter a number X: ");
-            x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the number: ");
+            int num = Convert.ToInt32(Console.ReadLine());
 
-            int y;
-            Console.WriteLine("Enter a number Y: ");
-            y = Convert.ToInt32(Console.ReadLine());
-
-            int z;
-            Console.WriteLine("Enter a number Z: ");
-            z = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(x * y * z);
+            for (int i = 0; i <= 10; i++)
+            {
+                Console.WriteLine("{0} * {1} = {2}", num, i, num * i);
+            }
             Console.Read();
         }
     }
