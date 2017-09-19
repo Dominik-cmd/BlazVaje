@@ -14,22 +14,18 @@ namespace BlazVaje
 
             for (int i = 0; i < 4; i++)
             {
-                if (i % 2 == 0)
-                {
                     for (int j = 0; j <= 3; j++)
                     {
-                        Console.Write("{0} ", num);
+                        if (i % 2 == 0)
+                        {
+                            Console.Write("{0} ", num);
+                        }
+                        else
+                        {
+                            Console.Write("{0}", num);
+                        }
                     }
-                    Console.WriteLine();
-                }
-                else
-                {
-                    for (int j = 0; j <= 3; j++)
-                    {
-                        Console.Write("{0}", num);
-                    }
-                    Console.WriteLine();
-                }
+                Console.WriteLine();
             }
             Console.ReadKey();
 
